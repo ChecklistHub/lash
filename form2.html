@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FILLING IN FORM</title>
+	<style>
+	body{
+	font-family: Verdana;
+	font-size:20px;
+	color: floralwhite;
+	background-color: #111;
+	background-image: url(Images/pic10.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.header{
+	text-align: center;
+	opacity: 0.8;
+	overflow: hidden;
+	padding: 20px; 
+	font-size: 30px;
+	background-color: hsla(248, 60%, 40%,0.6);
+	color: black;
+	font-family: Arial;
+}
+div form{
+	display: block;
+	background-color:hsla(248, 100%, 20%, 0.3) ;
+}
+.column{
+	float: left;
+	width: 100%;
+}
+input[type=submit]{
+	background-color:darkorange;
+	cursor: pointer;
+	padding: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	width: 50%;
+	display: block;
+	border-radius: 10px;
+}
+.button{
+	transition-duration: 4s;
+}
+.button:hover{
+	color: white;
+	background-color: seagreen;
+}
+@mediascreen and {max-width: 600px}
+{
+	.column{
+width: 100%;
+	} 
+}
+</style>
+</head>
+<body>
+<h1>FCC:Survey Form</h1>
+<div class="header"><b>free CodeCamp<br> Survey Form</b><br><i>Thank you for taking the time to help us improve the platform</i></header>
+</div>
+<div>
+	<form method="post" target="_blank">
+		<label>Name</label><br>
+		<input type="text" name="Name" placeholder="Enter your Name"><br><br>
+		<label>Email</label><br>
+		<input type="email" name="Email" placeholder="Enter your Email"><br><br>
+		<label>Age(optional)</label><br>
+		<input type="number" name="Age" placeholder="Age"><br><br>
+		<label>Which option best describes your current role?</label><br>
+	<select placeholder="Select current role">
+		<option>Student</option>
+		<option>Full Time Job</option>
+		<option>Full Time Learner</option>
+		<option>Prefer not to say</option>
+		<option>Other</option>
+	</select><br><br>
+	<label>Would you recommend freeCodeCamp to a friend?</label><br>
+	<input type="radio" name="option">
+	<label>Definitely</label><br>
+	<input type="radio" name="option">
+	<label>Maybe</label><br>
+	<input type="radio" name="option">
+    <label>Not sure</label><br><br>
+    <label>What is your favorite feature of freeCodeCamp?</label><br>
+    <select placeholder="Select an option">
+    	<option>Challenges</option>
+    	<option>Projects</option>
+    	<option>Community</option>
+    	<option>Open Source</option>
+    </select><br><br>
+    <label>What would you like to see improved?<i>(Check all that apply)</i></label><br>
+    <input type="checkbox" name="check">
+    <label>Front-end Projects</label><br>
+    <input type="checkbox" name="check">
+    <label>Back-end Projects</label><br>
+    <input type="checkbox" name="check">
+    <label>Data Visualization</label><br>
+    <input type="checkbox" name="check">
+    <label>Challenges</label><br>
+    <input type="checkbox" name="check">
+    <label>Open Source Community</label><br>
+    <input type="checkbox" name="check">
+    <label>Gitter help rooms</label><br>
+    <input type="checkbox" name="check">
+    <label>Videos</label><br>
+    <input type="checkbox" name="check">
+    <label>City Meetups</label><br>
+    <input type="checkbox" name="check">
+    <label>Wiki</label><br>
+    <input type="checkbox" name="check">
+    <label>Forum</label><br>
+    <label>Any comments or suggestions </label><br>
+    <input type="text" name="suggestions" placeholder="Enter your comment here..."><br><br>
+    <span class="button">
+    <input type="submit" name="Submit"><br>
+</span>
+	</form>
+</div>
+</body>
+</html>
